@@ -44,25 +44,25 @@ TODO: 待续
 # 配置Nginx
 首先进入conf目录`cd /etc/nginx`，在修改nginx配置之前，把原始配置文件备份一下。
 目录包括文件为：
-```
-# ls -l
-total 64
-drwxr-xr-x 2 root root 4096 Oct 27 23:38 <font color=#0099ff>conf.d</font>
--rw-r--r-- 1 root root  911 Mar  5  2014 fastcgi_params
--rw-r--r-- 1 root root 2258 Mar  5  2014 koi-utf
--rw-r--r-- 1 root root 1805 Mar  5  2014 koi-win
--rw-r--r-- 1 root root 2085 Mar  5  2014 mime.types
--rw-r--r-- 1 root root 5287 Mar  5  2014 naxsi_core.rules
--rw-r--r-- 1 root root  287 Mar  5  2014 naxsi.rules
--rw-r--r-- 1 root root  222 Mar  5  2014 naxsi-ui.conf.1.4.1
--rw-r--r-- 1 root root 1601 Mar  5  2014 nginx.conf
--rw-r--r-- 1 root root  180 Mar  5  2014 proxy_params
--rw-r--r-- 1 root root  465 Mar  5  2014 scgi_params
-drwxr-xr-x 2 root root 4096 Mar 21 12:02 <font color=#0099ff>sites-available</font>
-drwxr-xr-x 2 root root 4096 Mar 21 12:02 <font color=#0099ff>sites-enabled</font>
--rw-r--r-- 1 root root  532 Mar  5  2014 uwsgi_params
--rw-r--r-- 1 root root 3071 Mar  5  2014 win-utf
-```
+
+    # ls -l
+    total 64
+    drwxr-xr-x 2 root root 4096 Oct 27 23:38 conf.d
+    -rw-r--r-- 1 root root  911 Mar  5  2014 fastcgi_params
+    -rw-r--r-- 1 root root 2258 Mar  5  2014 koi-utf
+    -rw-r--r-- 1 root root 1805 Mar  5  2014 koi-win
+    -rw-r--r-- 1 root root 2085 Mar  5  2014 mime.types
+    -rw-r--r-- 1 root root 5287 Mar  5  2014 naxsi_core.rules
+    -rw-r--r-- 1 root root  287 Mar  5  2014 naxsi.rules
+    -rw-r--r-- 1 root root  222 Mar  5  2014 naxsi-ui.conf.1.4.1
+    -rw-r--r-- 1 root root 1601 Mar  5  2014 nginx.conf
+    -rw-r--r-- 1 root root  180 Mar  5  2014 proxy_params
+    -rw-r--r-- 1 root root  465 Mar  5  2014 scgi_params
+    drwxr-xr-x 2 root root 4096 Mar 21 12:02 sites-available
+    drwxr-xr-x 2 root root 4096 Mar 21 12:02 sites-enabled
+    -rw-r--r-- 1 root root  532 Mar  5  2014 uwsgi_params
+    -rw-r--r-- 1 root root 3071 Mar  5  2014 win-utf
+
 
 conf.d目录用来保存配置，但一般不用。
 nginx.conf中已经include了site-enabled下面的配置文件：
@@ -89,6 +89,11 @@ sites-available目录中的文件和site-enabled中的配置文件是同一个文件。
         # include /etc/nginx/naxsi.rules
 
         proxy_pass http://localhost:8080;
+    }
+
+    location ~ \.(gif|jpg|jpeg|png|bmp|swf)$ {
+        root /opt/apache-tomcat-8.5.8/webapps/ROOT;
+        expires 30d;
     }
 
 
