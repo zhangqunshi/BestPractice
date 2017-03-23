@@ -26,6 +26,7 @@ Jekins有三种方式进行安装：
 1. 建立jenkinsfile
 
 下面是针对Java语言的:
+```
     Jenkinsfile (Declarative Pipeline)
     pipeline {
         agent { docker 'maven:3.3.3' }
@@ -37,8 +38,9 @@ Jekins有三种方式进行安装：
             }
         }
     }
-
+```
 针对Python语言的:    
+```
     Jenkinsfile (Declarative Pipeline)
     pipeline {
     agent { docker 'python:3.5.1' }
@@ -50,7 +52,7 @@ Jekins有三种方式进行安装：
         }
     }
 }
-
+```
 2. 在Jenkins中点击*New Item*菜单
 ![jenkins_new_item](https://jenkins.io/doc/book/resources/pipeline/new-item-selection.png)
 
