@@ -39,6 +39,7 @@ Jekins有三种方式进行安装：
         }
     }
 ```
+
 针对Python语言的:    
 ```
     Jenkinsfile (Declarative Pipeline)
@@ -52,7 +53,8 @@ Jekins有三种方式进行安装：
         }
     }
 }
-```
+```
+
 2. 在Jenkins中点击*New Item*菜单
 ![jenkins_new_item](https://jenkins.io/doc/book/resources/pipeline/new-item-selection.png)
 
