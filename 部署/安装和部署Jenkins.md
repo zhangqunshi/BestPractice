@@ -55,12 +55,13 @@ Jekins有三种方式进行安装：
 }
 ```
 
-2. 在Jenkins中点击*New Item*菜单
+2. 在Jenkins中点击**New Item**菜单
+
 ![jenkins_new_item](https://jenkins.io/doc/book/resources/pipeline/new-item-selection.png)
 
-3. 给new item输入名称，并选择*Multibranch Pipeline*
-4. 点击*Add Source*按钮, 选择仓库类型
-5. 点击*Save*按钮来运行Pipeline。
+3. 给new item输入名称，并选择**Multibranch Pipeline**
+4. 点击**Add Source**按钮, 选择仓库类型
+5. 点击**Save**按钮来运行Pipeline。
 
 # 参考
 
