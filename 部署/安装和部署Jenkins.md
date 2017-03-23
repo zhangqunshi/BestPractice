@@ -18,6 +18,16 @@ Jekins有三种方式进行安装：
 至少具有512MB内存。
 1. 下载jenkins.war。（上面已经说明了）
 2. 通过SSH连接到ubuntu上，然后运行`java -jar jenkins.war`
+
+>Jenkins initial setup is required. An admin user has been created and a password generated.
+>Please use the following password to proceed to installation:
+
+>b3ce86bc4ab64188bee4032f3845d113
+
+>This may also be found at: /root/.jenkins/secrets/initialAdminPassword
+上面的密码会在下个步骤中使用。
+
+
 3. 打开web浏览器，访问http://localhost:8080，接下来安装页面上的说明进行部署
 4. 许多的Pipeline例子需要安装Docker。
 
