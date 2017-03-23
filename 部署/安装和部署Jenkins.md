@@ -28,7 +28,7 @@ Jekins有三种方式进行安装：
 
 上面的密码会在下个步骤中使用。
 
-3. 打开web浏览器，访问http://localhost:8080，接下来安装页面上的说明进行部署
+3. 打开web浏览器，访问<http://localhost:8080>，接下来安装页面上的说明进行部署
 4. 许多的Pipeline例子需要安装Docker。
 
 # 建立Pipeline
