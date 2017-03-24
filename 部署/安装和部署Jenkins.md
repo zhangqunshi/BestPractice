@@ -54,15 +54,15 @@ Jekins有三种方式进行安装：
 ```
     Jenkinsfile (Declarative Pipeline)
     pipeline {
-    agent { docker 'python:3.5.1' }
-    stages {
-        stage('build') {
-            steps {
-                sh 'python --version'
+        agent { docker 'python:3.5.1' }
+        stages {
+            stage('build') {
+                steps {
+                    sh 'python --version'
+                }
             }
         }
     }
-}
 ```
 
 2. 在Jenkins中点击**New Item**菜单
