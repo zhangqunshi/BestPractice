@@ -106,5 +106,5 @@ sudo service nginx restart
 
 
 # 参考文档
-安装文档: <http://nginx.org/en/docs/install.html>
-使用文档: <http://nginx.org/en/docs/beginners_guide.html>
+- 安装文档: <http://nginx.org/en/docs/install.html>
+- 使用文档: <http://nginx.org/en/docs/beginners_guide.html>
