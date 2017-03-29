@@ -1,23 +1,23 @@
-°²×°ºÍ²¿ÊğJenkins
+ï»¿å®‰è£…å’Œéƒ¨ç½²Jenkins
 ===================
-# »·¾³
-²Ù×÷ÏµÍ³£ºubuntu 14.04.4 LTS
+# ç¯å¢ƒ
+æ“ä½œç³»ç»Ÿï¼šubuntu 14.04.4 LTS
 
-# ÏÂÔØJenkins
+# ä¸‹è½½Jenkins
 ```
 wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/2.32.3/jenkins.war
 ```
 
-# °²×°Jenkins
-JekinsÓĞÈıÖÖ·½Ê½½øĞĞ°²×°£º
-- ¿ÉÒÔÍ¨¹ı±¾µØµÄ°üÎÄ¼şÖ±½Ó°²×°
-- »òÕßÊ¹ÓÃDocker½øĞĞ°²×°£»
-- »¹¿ÉÒÔÏÂÔØwarÎÄ¼ş£¬Ö®ºó°²×°ÔÚÒ»Ì¨´øÓĞJREµÄ»úÆ÷ÉÏ¡£
+# å®‰è£…Jenkins
+Jekinsæœ‰ä¸‰ç§æ–¹å¼è¿›è¡Œå®‰è£…ï¼š
+- å¯ä»¥é€šè¿‡æœ¬åœ°çš„åŒ…æ–‡ä»¶ç›´æ¥å®‰è£…
+- æˆ–è€…ä½¿ç”¨Dockerè¿›è¡Œå®‰è£…ï¼›
+- è¿˜å¯ä»¥ä¸‹è½½waræ–‡ä»¶ï¼Œä¹‹åå®‰è£…åœ¨ä¸€å°å¸¦æœ‰JREçš„æœºå™¨ä¸Šã€‚
 
-ÏÂÃæ½éÉÜµÄÊÇ×îºóÒ»ÖÖ°²×°·½Ê½¡£ĞèÒªÖÁÉÙJava7ÒÔÉÏµÄ£¨ÍÆ¼öJava 8£©»·¾³¡£
-ÖÁÉÙ¾ßÓĞ512MBÄÚ´æ¡£
-1. ÏÂÔØjenkins.war¡££¨ÉÏÃæÒÑ¾­ËµÃ÷ÁË£©
-2. Í¨¹ıSSHÁ¬½Óµ½ubuntuÉÏ£¬È»ºóÔËĞĞ`java -jar jenkins.war`
+ä¸‹é¢ä»‹ç»çš„æ˜¯æœ€åä¸€ç§å®‰è£…æ–¹å¼ã€‚éœ€è¦è‡³å°‘Java7ä»¥ä¸Šçš„ï¼ˆæ¨èJava 8ï¼‰ç¯å¢ƒã€‚
+è‡³å°‘å…·æœ‰512MBå†…å­˜ã€‚
+1. ä¸‹è½½jenkins.warã€‚ï¼ˆä¸Šé¢å·²ç»è¯´æ˜äº†ï¼‰
+2. é€šè¿‡SSHè¿æ¥åˆ°ubuntuä¸Šï¼Œç„¶åè¿è¡Œ`java -jar jenkins.war`
 
     >Jenkins initial setup is required. An admin user has been created and a password generated.
     >Please use the following password to proceed to installation:
@@ -26,16 +26,16 @@ JekinsÓĞÈıÖÖ·½Ê½½øĞĞ°²×°£º
     >
     >This may also be found at: /root/.jenkins/secrets/initialAdminPassword
 
-ÉÏÃæµÄÃÜÂë»áÔÚÏÂ¸ö²½ÖèÖĞÊ¹ÓÃ¡£
+ä¸Šé¢çš„å¯†ç ä¼šåœ¨ä¸‹ä¸ªæ­¥éª¤ä¸­ä½¿ç”¨ã€‚
 
-3. ´ò¿ªwebä¯ÀÀÆ÷£¬·ÃÎÊ<http://localhost:8080>£¬½ÓÏÂÀ´°²×°Ò³ÃæÉÏµÄËµÃ÷½øĞĞ²¿Êğ
-4. Ğí¶àµÄPipelineÀı×ÓĞèÒª°²×°Docker¡£
+3. æ‰“å¼€webæµè§ˆå™¨ï¼Œè®¿é—®<http://localhost:8080>ï¼Œæ¥ä¸‹æ¥å®‰è£…é¡µé¢ä¸Šçš„è¯´æ˜è¿›è¡Œéƒ¨ç½²
+4. è®¸å¤šçš„Pipelineä¾‹å­éœ€è¦å®‰è£…Dockerã€‚
 
-# ½¨Á¢Pipeline
-×î¿ìµÄ·½Ê½ÊÇ£¬¸´ÖÆÏÂÃæµÄÀı×Óµ½ÄãµÄ´úÂë°æ±¾¿âÖĞ£¬²¢Ê¹ÓÃJenkinsfile×÷ÎªÎÄ¼şÃû¡£
-1. ½¨Á¢jenkinsfile
+# å»ºç«‹Pipeline
+æœ€å¿«çš„æ–¹å¼æ˜¯ï¼Œå¤åˆ¶ä¸‹é¢çš„ä¾‹å­åˆ°ä½ çš„ä»£ç ç‰ˆæœ¬åº“ä¸­ï¼Œå¹¶ä½¿ç”¨Jenkinsfileä½œä¸ºæ–‡ä»¶åã€‚
+1. å»ºç«‹jenkinsfile
 
-ÏÂÃæÊÇÕë¶ÔJavaÓïÑÔµÄ:
+ä¸‹é¢æ˜¯é’ˆå¯¹Javaè¯­è¨€çš„:
 ```
     Jenkinsfile (Declarative Pipeline)
     pipeline {
@@ -50,7 +50,7 @@ JekinsÓĞÈıÖÖ·½Ê½½øĞĞ°²×°£º
     }
 ```
 
-Õë¶ÔPythonÓïÑÔµÄ:    
+é’ˆå¯¹Pythonè¯­è¨€çš„:    
 ```
     Jenkinsfile (Declarative Pipeline)
     pipeline {
@@ -65,14 +65,14 @@ JekinsÓĞÈıÖÖ·½Ê½½øĞĞ°²×°£º
     }
 ```
 
-2. ÔÚJenkinsÖĞµã»÷**New Item**²Ëµ¥
+2. åœ¨Jenkinsä¸­ç‚¹å‡»**New Item**èœå•
 
 ![jenkins_new_item](https://jenkins.io/doc/book/resources/pipeline/new-item-selection.png)
 
-3. ¸ønew itemÊäÈëÃû³Æ£¬²¢Ñ¡Ôñ**Multibranch Pipeline**
-4. µã»÷**Add Source**°´Å¥, Ñ¡Ôñ²Ö¿âÀàĞÍ
-5. µã»÷**Save**°´Å¥À´ÔËĞĞPipeline¡£
+3. ç»™new itemè¾“å…¥åç§°ï¼Œå¹¶é€‰æ‹©**Multibranch Pipeline**
+4. ç‚¹å‡»**Add Source**æŒ‰é’®, é€‰æ‹©ä»“åº“ç±»å‹
+5. ç‚¹å‡»**Save**æŒ‰é’®æ¥è¿è¡ŒPipelineã€‚
 
-# ²Î¿¼
+# å‚è€ƒ
 
 https://jenkins.io/doc/pipeline/tour/hello-world/

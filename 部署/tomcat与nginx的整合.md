@@ -1,49 +1,49 @@
-TomcatÓëNginxµÄÕûºÏ
+ï»¿Tomcatä¸Nginxçš„æ•´åˆ
 ===================
-# »·¾³
-²Ù×÷ÏµÍ³£ºubuntu 14.04.4 LTS
+# ç¯å¢ƒ
+æ“ä½œç³»ç»Ÿï¼šubuntu 14.04.4 LTS
 
 
-# °²×°Nginx
-ÓĞÁ½ÖÖ·½Ê½£¬Ò»ÖÖÊÇÊ¹ÓÃapt-getÃüÁîÀ´°²×°¶ş½øÖÆ°æ±¾£¬ÁíÍâÒ»ÖÖÊÇÏÂÔØÔ´Âëºó×Ô¼º±àÒë¡£
+# å®‰è£…Nginx
+æœ‰ä¸¤ç§æ–¹å¼ï¼Œä¸€ç§æ˜¯ä½¿ç”¨apt-getå‘½ä»¤æ¥å®‰è£…äºŒè¿›åˆ¶ç‰ˆæœ¬ï¼Œå¦å¤–ä¸€ç§æ˜¯ä¸‹è½½æºç åè‡ªå·±ç¼–è¯‘ã€‚
 
-## ¶ş½øÖÆ°²×° (ĞèÒªÁªÍø)
-ÕâÖÖ°²×°·½Ê½±È½Ï¼òµ¥¡£Ö±½ÓÔËĞĞ£º
+## äºŒè¿›åˆ¶å®‰è£… (éœ€è¦è”ç½‘)
+è¿™ç§å®‰è£…æ–¹å¼æ¯”è¾ƒç®€å•ã€‚ç›´æ¥è¿è¡Œï¼š
 ```
 sudo apt-get install nginx
 ```
-:) ÕæµÄºÃ·½±ãÑ½¡£¾ÍÊÇ°æ±¾ÓĞµãµÍ£ºnginx/1.4.6
+:) çœŸçš„å¥½æ–¹ä¾¿å‘€ã€‚å°±æ˜¯ç‰ˆæœ¬æœ‰ç‚¹ä½ï¼šnginx/1.4.6
 
-°²×°ºóÎÄ¼şµÄÄ¿Â¼Î»ÖÃ£º
-1. ·şÎñµØÖ·£º/etc/init.d/nginx
-2. ÅäÖÃµØÖ·£º/etc/nginx/¡¡¡¡Èç£º/etc/nginx/nginx.conf
-3. WebÄ¬ÈÏÄ¿Â¼£º/usr/share/nginx/http/¡¡¡¡Èç£ºusr/share/nginx/index.html
-4. ÈÕÖ¾Ä¿Â¼£º/var/log/nginx/¡¡¡¡Èç£º/var/log/nginx/access.log
-5. Ö÷³ÌĞòÎÄ¼ş£º/usr/sbin/nginx
+å®‰è£…åæ–‡ä»¶çš„ç›®å½•ä½ç½®ï¼š
+1. æœåŠ¡åœ°å€ï¼š/etc/init.d/nginx
+2. é…ç½®åœ°å€ï¼š/etc/nginx/ã€€ã€€å¦‚ï¼š/etc/nginx/nginx.conf
+3. Webé»˜è®¤ç›®å½•ï¼š/usr/share/nginx/http/ã€€ã€€å¦‚ï¼šusr/share/nginx/index.html
+4. æ—¥å¿—ç›®å½•ï¼š/var/log/nginx/ã€€ã€€å¦‚ï¼š/var/log/nginx/access.log
+5. ä¸»ç¨‹åºæ–‡ä»¶ï¼š/usr/sbin/nginx
 
 
-## Ô´´úÂë°²×° (¿ÉÒÔ²»ÁªÍø)
+## æºä»£ç å®‰è£… (å¯ä»¥ä¸è”ç½‘)
 
-### ÏÂÔØNginx
+### ä¸‹è½½Nginx
 
-Ê×ÏÈÔÚ¹ÙÍøÖĞÏÂÔØËùĞè°æ±¾£ºhttp://nginx.org/en/download.html¡£
+é¦–å…ˆåœ¨å®˜ç½‘ä¸­ä¸‹è½½æ‰€éœ€ç‰ˆæœ¬ï¼šhttp://nginx.org/en/download.htmlã€‚
 
-Ä¿Ç°ÎÒÊ¹ÓÃµÄ°æ±¾ÊÇLinux¾³ÏÂ×îĞÂÎÈ¶¨°æ1.10.3¡£
+ç›®å‰æˆ‘ä½¿ç”¨çš„ç‰ˆæœ¬æ˜¯Linuxå¢ƒä¸‹æœ€æ–°ç¨³å®šç‰ˆ1.10.3ã€‚
 
-ÏÂÔØÍê±Ïºó£¬½âÑ¹nginx-1.10.3.tar.gz¡£
+ä¸‹è½½å®Œæ¯•åï¼Œè§£å‹nginx-1.10.3.tar.gzã€‚
 
 ```bash
 wget http://nginx.org/download/nginx-1.10.3.tar.gz
 tar zxvf nginx-1.10.3.tar.gz
 ```
 
-TODO: ´ıĞø
+TODO: å¾…ç»­
 
 
 
-# ÅäÖÃNginx
-Ê×ÏÈ½øÈëconfÄ¿Â¼`cd /etc/nginx`£¬ÔÚĞŞ¸ÄnginxÅäÖÃÖ®Ç°£¬°ÑÔ­Ê¼ÅäÖÃÎÄ¼ş±¸·İÒ»ÏÂ¡£
-Ä¿Â¼°üÀ¨ÎÄ¼şÎª£º
+# é…ç½®Nginx
+é¦–å…ˆè¿›å…¥confç›®å½•`cd /etc/nginx`ï¼Œåœ¨ä¿®æ”¹nginxé…ç½®ä¹‹å‰ï¼ŒæŠŠåŸå§‹é…ç½®æ–‡ä»¶å¤‡ä»½ä¸€ä¸‹ã€‚
+ç›®å½•åŒ…æ‹¬æ–‡ä»¶ä¸ºï¼š
 
     # ls -l
     total 64
@@ -64,22 +64,22 @@ TODO: ´ıĞø
     -rw-r--r-- 1 root root 3071 Mar  5  2014 win-utf
 
 
-conf.dÄ¿Â¼ÓÃÀ´±£´æÅäÖÃ£¬µ«Ò»°ã²»ÓÃ¡£
-nginx.confÖĞÒÑ¾­includeÁËsite-enabledÏÂÃæµÄÅäÖÃÎÄ¼ş£º
+conf.dç›®å½•ç”¨æ¥ä¿å­˜é…ç½®ï¼Œä½†ä¸€èˆ¬ä¸ç”¨ã€‚
+nginx.confä¸­å·²ç»includeäº†site-enabledä¸‹é¢çš„é…ç½®æ–‡ä»¶ï¼š
 
 > include /etc/nginx/conf.d/*.conf;
 > include /etc/nginx/sites-enabled/*;
 
-ËùÒÔ²»Òª¸Änginx.confÎÄ¼şÁË£¬Ö±½ÓĞŞ¸Äsite-enabledÖĞµÄÅäÖÃÎÄ¼ş¡£
-sites-availableÄ¿Â¼ÖĞµÄÎÄ¼şºÍsite-enabledÖĞµÄÅäÖÃÎÄ¼şÊÇÍ¬Ò»¸öÎÄ¼ş¡£
+æ‰€ä»¥ä¸è¦æ”¹nginx.confæ–‡ä»¶äº†ï¼Œç›´æ¥ä¿®æ”¹site-enabledä¸­çš„é…ç½®æ–‡ä»¶ã€‚
+sites-availableç›®å½•ä¸­çš„æ–‡ä»¶å’Œsite-enabledä¸­çš„é…ç½®æ–‡ä»¶æ˜¯åŒä¸€ä¸ªæ–‡ä»¶ã€‚
 > lrwxrwxrwx 1 root root 34 Mar 21 12:02 default -> /etc/nginx/sites-available/default
 
-ËùÒÔĞŞ¸ÄÁ½¸öÄ¿Â¼ÏÂµÄdefaultÎÄ¼ş¶¼Ò»Ñù¡£
+æ‰€ä»¥ä¿®æ”¹ä¸¤ä¸ªç›®å½•ä¸‹çš„defaultæ–‡ä»¶éƒ½ä¸€æ ·ã€‚
 
-ĞŞ¸ÄvimÃüÁîĞŞ¸ÄÅäÖÃÎÄ¼ş: 
+ä¿®æ”¹vimå‘½ä»¤ä¿®æ”¹é…ç½®æ–‡ä»¶: 
 `vim /etc/nginx/sites-available/default`
 
-±à¼­location²¿·Ö£º
+ç¼–è¾‘locationéƒ¨åˆ†ï¼š
 
     location / {
         # First attempt to serve request as file, then
@@ -98,13 +98,13 @@ sites-availableÄ¿Â¼ÖĞµÄÎÄ¼şºÍsite-enabledÖĞµÄÅäÖÃÎÄ¼şÊÇÍ¬Ò»¸öÎÄ¼ş¡£
 
 
 
-# Æô¶¯Nginx·şÎñ
-ĞŞ¸ÄÅäÖÃºó£¬ÖØÆôÉúĞ§£¬ÊäÈëÃüÁî£º
+# å¯åŠ¨NginxæœåŠ¡
+ä¿®æ”¹é…ç½®åï¼Œé‡å¯ç”Ÿæ•ˆï¼Œè¾“å…¥å‘½ä»¤ï¼š
 ```
 sudo service nginx restart
 ```
 
 
-# ²Î¿¼ÎÄµµ
-°²×°ÎÄµµ: <http://nginx.org/en/docs/install.html>
-Ê¹ÓÃÎÄµµ: <http://nginx.org/en/docs/beginners_guide.html>
+# å‚è€ƒæ–‡æ¡£
+å®‰è£…æ–‡æ¡£: <http://nginx.org/en/docs/install.html>
+ä½¿ç”¨æ–‡æ¡£: <http://nginx.org/en/docs/beginners_guide.html>

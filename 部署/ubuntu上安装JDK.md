@@ -1,80 +1,80 @@
-ubuntu°²×°JDK
+ï»¿ubuntuå®‰è£…JDK
 ===================
-# »·¾³
-²Ù×÷ÏµÍ³£ºubuntu 14.04.4 LTS
+# ç¯å¢ƒ
+æ“ä½œç³»ç»Ÿï¼šubuntu 14.04.4 LTS
 
-# °²×°·½Ê½
-°²×°·ÖÎªÁ½ÖÖ·½Ê½£º
-1. ÊÖ¶¯ÏÂÔØtar.gzÎÄ¼ş£¬½âÑ¹²¢°²×°
-2. Ö±½ÓÍ¨¹ıubuntu¸øµÄÃüÁî½øĞĞ°²×°
+# å®‰è£…æ–¹å¼
+å®‰è£…åˆ†ä¸ºä¸¤ç§æ–¹å¼ï¼š
+1. æ‰‹åŠ¨ä¸‹è½½tar.gzæ–‡ä»¶ï¼Œè§£å‹å¹¶å®‰è£…
+2. ç›´æ¥é€šè¿‡ubuntuç»™çš„å‘½ä»¤è¿›è¡Œå®‰è£…
 
-## µÚÒ»ÖÖ·½·¨£ºÊÖ¶¯°²×°
-### ÏÂÔØJDK
-µØÖ·Îª£ºhttp://www.oracle.com/technetwork/java/javase/downloads/index.html
+## ç¬¬ä¸€ç§æ–¹æ³•ï¼šæ‰‹åŠ¨å®‰è£…
+### ä¸‹è½½JDK
+åœ°å€ä¸ºï¼šhttp://www.oracle.com/technetwork/java/javase/downloads/index.html
 ```
 wget http://download.oracle.com/otn-pub/java/jdk/8u121-b13/e9e7ea248e2c4826b92b3f075a80e441/jdk-8u121-linux-x64.tar.gz
 ```
 
-### ½âÑ¹°²×°
-°ÑJDK°²×°µ½Õâ¸öÂ·¾¶£º/usr/lib/jvm
-Èç¹ûÃ»ÓĞÕâ¸öÄ¿Â¼£¨µÚÒ»´Îµ±È»Ã»ÓĞ£©£¬ÎÒÃÇ¾ÍĞÂ½¨Ò»¸öÄ¿Â¼
+### è§£å‹å®‰è£…
+æŠŠJDKå®‰è£…åˆ°è¿™ä¸ªè·¯å¾„ï¼š/usr/lib/jvm
+å¦‚æœæ²¡æœ‰è¿™ä¸ªç›®å½•ï¼ˆç¬¬ä¸€æ¬¡å½“ç„¶æ²¡æœ‰ï¼‰ï¼Œæˆ‘ä»¬å°±æ–°å»ºä¸€ä¸ªç›®å½•
 ```
 cd /usr/lib 
 sudo mkdir jvm
 ```
-½âÑ¹ÎÄ¼ş
+è§£å‹æ–‡ä»¶
 ```
 tar zxvf jdk-8u121-linux-x64.tar.gz -C /usr/lib/jvm
 cd /usr/lib/jvm
 mv jdk1.8.0_121 jdk8
 ```
-### ÅäÖÃ»·¾³±äÁ¿
-Í¨¹ı`vim /etc/profile`´ò¿ªÎÄ¼ş£¬²¢ÔÚÄ©Î²×·¼ÓÈçÏÂÄÚÈİ£º
+### é…ç½®ç¯å¢ƒå˜é‡
+é€šè¿‡`vim /etc/profile`æ‰“å¼€æ–‡ä»¶ï¼Œå¹¶åœ¨æœ«å°¾è¿½åŠ å¦‚ä¸‹å†…å®¹ï¼š
 
     export JAVA_HOME=/usr/lib/jvm/jdk8
     export JRE_HOME=${JAVA_HOME}/jre
     export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
     export PATH=${JAVA_HOME}/bin:$PATH
 
-±£´æÍË³ö±à¼­¡£
-Ê¹ÆäÁ¢¿ÌÉúĞ§`source /etc/profile`
+ä¿å­˜é€€å‡ºç¼–è¾‘ã€‚
+ä½¿å…¶ç«‹åˆ»ç”Ÿæ•ˆ`source /etc/profile`
 
 
-### ÅäÖÃÄ¬ÈÏJDK
-ÓÉÓÚÒ»Ğ©LinuxµÄ·¢ĞĞ°æÖĞÒÑ¾­´æÔÚÄ¬ÈÏµÄJDK£¬ÈçOpenJDKµÈ¡£ËùÒÔÎªÁËÊ¹µÃÎÒÃÇ¸Õ²Å°²×°ºÃµÄJDK°æ±¾ÄÜ³ÉÎªÄ¬ÈÏµÄJDK°æ±¾£¬ÎÒÃÇ»¹Òª½øĞĞÏÂÃæµÄÅäÖÃ¡£
-Ö´ĞĞÏÂÃæµÄÃüÁî£º
+### é…ç½®é»˜è®¤JDK
+ç”±äºä¸€äº›Linuxçš„å‘è¡Œç‰ˆä¸­å·²ç»å­˜åœ¨é»˜è®¤çš„JDKï¼Œå¦‚OpenJDKç­‰ã€‚æ‰€ä»¥ä¸ºäº†ä½¿å¾—æˆ‘ä»¬åˆšæ‰å®‰è£…å¥½çš„JDKç‰ˆæœ¬èƒ½æˆä¸ºé»˜è®¤çš„JDKç‰ˆæœ¬ï¼Œæˆ‘ä»¬è¿˜è¦è¿›è¡Œä¸‹é¢çš„é…ç½®ã€‚
+æ‰§è¡Œä¸‹é¢çš„å‘½ä»¤ï¼š
 
     sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk8/bin/java 300 
     sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk8/bin/javac 300
 
-×¢Òâ£ºÈç¹ûÒÔÉÏÁ½¸öÃüÁî³öÏÖÕÒ²»µ½Â·¾¶ÎÊÌâ£¬Ö»ÒªÖØÆôÒ»ÏÂ¼ÆËã»úÔÚÖØ¸´ÉÏÃæÁ½ĞĞ´úÂë¾ÍOKÁË¡£
-Ö´ĞĞÏÂÃæµÄ´úÂë¿ÉÒÔ¿´µ½µ±Ç°¸÷ÖÖJDK°æ±¾ºÍÅäÖÃ£º
+æ³¨æ„ï¼šå¦‚æœä»¥ä¸Šä¸¤ä¸ªå‘½ä»¤å‡ºç°æ‰¾ä¸åˆ°è·¯å¾„é—®é¢˜ï¼Œåªè¦é‡å¯ä¸€ä¸‹è®¡ç®—æœºåœ¨é‡å¤ä¸Šé¢ä¸¤è¡Œä»£ç å°±OKäº†ã€‚
+æ‰§è¡Œä¸‹é¢çš„ä»£ç å¯ä»¥çœ‹åˆ°å½“å‰å„ç§JDKç‰ˆæœ¬å’Œé…ç½®ï¼š
 
     sudo update-alternatives --config java
 
 
-## µÚ¶şÖÖ·½·¨£ºÊ¹ÓÃPPA°²×°(×Ô¶¯°²×°) --> ÓĞÎÊÌâ
-ÔËĞĞÏÂÃæÃüÁî£º
+## ç¬¬äºŒç§æ–¹æ³•ï¼šä½¿ç”¨PPAå®‰è£…(è‡ªåŠ¨å®‰è£…) --> æœ‰é—®é¢˜
+è¿è¡Œä¸‹é¢å‘½ä»¤ï¼š
 ```
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java8-installer (Ã»ÓĞ³É¹¦,ÏÔÊ¾E: Unable to locate package oracle-java8-installer)
+sudo apt-get install oracle-java8-installer (æ²¡æœ‰æˆåŠŸ,æ˜¾ç¤ºE: Unable to locate package oracle-java8-installer)
 ```
 
-ÉèÖÃ Java 8 »·¾³±äÁ¿£º
+è®¾ç½® Java 8 ç¯å¢ƒå˜é‡ï¼š
     
     sudo apt-get install oracle-java8-set-default
 
-ÇĞ»»Îª Java 7 £º`sudo update-java-alternatives -s java-7-oracle`
-ÔÙÇĞ»»Îª Java 8£º`sudo update-java-alternatives -s java-8-oracle`
+åˆ‡æ¢ä¸º Java 7 ï¼š`sudo update-java-alternatives -s java-7-oracle`
+å†åˆ‡æ¢ä¸º Java 8ï¼š`sudo update-java-alternatives -s java-8-oracle`
 
-°²×° Java 8 ĞèÒª½ÓÊÜĞí¿É£¬Èç¹ûÄãÏë×Ô¶¯°²×°£¬ÄÇÃ´¿ÉÒÔÔÚ°²×°Ö®Ç°ÔËĞĞ£º
+å®‰è£… Java 8 éœ€è¦æ¥å—è®¸å¯ï¼Œå¦‚æœä½ æƒ³è‡ªåŠ¨å®‰è£…ï¼Œé‚£ä¹ˆå¯ä»¥åœ¨å®‰è£…ä¹‹å‰è¿è¡Œï¼š
     
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
 
-## ²âÊÔ
-´ò¿ªÒ»¸öÖÕ¶Ë£¬ÊäÈëÃüÁî`java -version`
+## æµ‹è¯•
+æ‰“å¼€ä¸€ä¸ªç»ˆç«¯ï¼Œè¾“å…¥å‘½ä»¤`java -version`
 
 
-# ²Î¿¼
+# å‚è€ƒ
 http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html
