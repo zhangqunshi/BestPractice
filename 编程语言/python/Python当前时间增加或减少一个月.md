@@ -66,8 +66,8 @@ if self.months:
 
 
 参考：
-https://dateutil.readthedocs.io/en/stable/
-https://github.com/dateutil/dateutil
+- https://dateutil.readthedocs.io/en/stable/
+- https://github.com/dateutil/dateutil
 
 @完
 
