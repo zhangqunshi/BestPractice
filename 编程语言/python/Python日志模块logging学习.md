@@ -322,6 +322,6 @@ if __name__ == "__main__":
 
 -------------------------
 参考：
-<http://blog.csdn.net/yatere/article/details/6655445>
-<http://blog.csdn.net/z_johnny/article/details/50812878>
-<http://blog.csdn.net/liuchunming033/article/details/39080457>
+- <http://blog.csdn.net/yatere/article/details/6655445>
+- <http://blog.csdn.net/z_johnny/article/details/50812878>
+- <http://blog.csdn.net/liuchunming033/article/details/39080457>
