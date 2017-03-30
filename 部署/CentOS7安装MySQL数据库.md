@@ -97,7 +97,7 @@ mysql配置文件为/etc/my.cnf
 把在所有数据库的所有表的所有权限赋值给位于所有IP地址的root用户。
 
     mysql> grant all privileges on *.* to root@'%'identified by 'password';
-    mysql> mysql> flush privileges;
+    mysql> flush privileges;
 如果是新用户而不是root，则要先新建用户
 
     mysql>create user 'username'@'%' identified by 'password';  
