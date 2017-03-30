@@ -25,3 +25,8 @@ pip命令是python用来管理包的工具。也就是使用这个pip命令来�
 之后就可以开始安装Django了。
 
 @END
+
+-------------
+参考
+
+-  https://pip.pypa.io/en/stable/installing/
