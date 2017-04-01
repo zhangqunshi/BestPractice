@@ -101,6 +101,61 @@ pip install psutil
 如果第一步骤的python开发包不安装，那么会出现error: command 'gcc' failed with exit status 1
 
 
+## 安装Nginx
+运行命令
+```
+$ wget http://nginx.org/packages/centos/7/x86_64/RPMS/nginx-1.10.3-1.el7.ngx.x86_64.rpm
+$ rpm -ivh nginx-1.10.3-1.el7.ngx.x86_64.rpm
+```
+安装之后需要修改配置文件/etc/nginx/conf.d/default.conf文件。
+增加如下部分：
+```
+location / {
+    root /path/frontend/html/;
+    index index.html index.htm;
+    expires 30d;
+    add_header Cache-Control private;	
+    
+}
+
+location /api/ {
+    include uwsgi_params;
+    uwsgi_pass 127.0.0.1:8001;
+    uwsgi_read_timeout 2;
+}
+```
+启动运行命令`systemctl start nginx`。
+
+## 安装uwsgi
+```
+$ pip install uwsgi
+```
+Successfully installed uwsgi-2.0.15显示后，说明安装完成。
+接下来需要配置一下uwsgi，在你的Django项目所在目录下建立一个uwsgi.ini文件。(文件名可以改)
+内容如下：
+```
+[uwsgi]
+socket=:9000
+chdir=/path/to/yourproject
+module=yourproject.wsgi:application
+master=True
+processes=10
+enable-threads=true
+pidfile=/var/run/uwsgi.pid
+vacuum=True
+max-requests=5000
+daemonize=/var/log/yourproject.log
+```
+记得把上面的yourproject替换成你项目的名称。之后就启动uwsgi进程
+```
+uwsgi --ini /path/to/yourproject/uwsgi.ini
+```
+
+使用Django提供的命令来把静态文件导出到settings.py中配置STATIC_ROOT的目录中。 
+```sh
+python manage.py collectstatic
+```
+
 ## 建立数据库表
 执行下面命令：
 ```
@@ -111,6 +166,10 @@ python manage.py migrate
 ## 运行Django
 执行`python manage.py runserver`，然后打开浏览器查看是否能访问主页。
 
+
+以上亲测可行.
+
+@完
 
 ----------------------
 参考
