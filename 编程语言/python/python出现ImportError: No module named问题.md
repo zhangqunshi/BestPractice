@@ -23,6 +23,7 @@ sys.path.append("/path/your/code")
 - 调用sys.path.append("path")
 - 直接把模块文件放到$python_dir/lib目录下
 
+还有可能是权限问题，有些操作是在root下，而有些操作不是导致这个原因。另外还有可能是__init__.py文件中有windows系统的特殊字符导致。
 
 ----------
 参考: <http://blog.csdn.net/damotiansheng/article/details/43916881>
