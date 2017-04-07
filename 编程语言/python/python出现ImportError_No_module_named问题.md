@@ -1,29 +1,29 @@
-pythonÄ£¿éÒÔ¼°µ¼Èë³öÏÖImportError: No module named 'xxx'ÎÊÌâ
+pythonæ¨¡å—ä»¥åŠå¯¼å…¥å‡ºçŽ°ImportError: No module named 'xxx'é—®é¢˜
 ================
 
-»·¾³£º CentOS7
+çŽ¯å¢ƒï¼š CentOS7
 
-# ÎÊÌâÃèÊö
-Ç°¼¸Ìì³öÏÖImportError: No module named 'xxx'ÎÊÌâ¡£·¢ÏÖÎÄ¼þ¼ÐÏÂÃæÓÐ__init__.pyÎÄ¼þ¡£
-ËµÃ÷°üÒÑ¾­ÕýÈ·¡£Í¬Ê±°ÑÔ´´úÂëÄ¿Â¼¼ÓÈëµ½ÁËPYTHONPATH»·¾³±äÁ¿ÖÐ¡£µ«ÊÇÈÔÈ»²»ºÃÊ¹¡£Ã»ÓÐÕÒµ½Ô­Òò£¬
-¶øÇÒÂ·¾¶¼ì²é¶à±é£¬È·¶¨ÊÇÕýÈ·µÄ¡£ÁíÍâÓÉÓÚÏµÍ³±»¶à¸öÓÃ»§¹«ÓÃ£¬ËùÒÔ²»ÄÜÖØÆôÏµÍ³¡£
+# é—®é¢˜æè¿°
+å‰å‡ å¤©å‡ºçŽ°ImportError: No module named 'xxx'é—®é¢˜ã€‚å‘çŽ°æ–‡ä»¶å¤¹ä¸‹é¢æœ‰__init__.pyæ–‡ä»¶ã€‚
+è¯´æ˜ŽåŒ…å·²ç»æ­£ç¡®ã€‚åŒæ—¶æŠŠæºä»£ç ç›®å½•åŠ å…¥åˆ°äº†PYTHONPATHçŽ¯å¢ƒå˜é‡ä¸­ã€‚ä½†æ˜¯ä»ç„¶ä¸å¥½ä½¿ã€‚æ²¡æœ‰æ‰¾åˆ°åŽŸå› ï¼Œ
+è€Œä¸”è·¯å¾„æ£€æŸ¥å¤šéï¼Œç¡®å®šæ˜¯æ­£ç¡®çš„ã€‚å¦å¤–ç”±äºŽç³»ç»Ÿè¢«å¤šä¸ªç”¨æˆ·å…¬ç”¨ï¼Œæ‰€ä»¥ä¸èƒ½é‡å¯ç³»ç»Ÿã€‚
 
-## ½â¾ö°ì·¨
-ÉÏÍøÕÒÁËÒ»¸ö°ì·¨£¬Ê¹ÓÃ`sys.path.append()`À´Ìí¼ÓÂ·¾¶¡£¾ßÌå´úÂëÎª£º
+## è§£å†³åŠžæ³•
+ä¸Šç½‘æ‰¾äº†ä¸€ä¸ªåŠžæ³•ï¼Œä½¿ç”¨`sys.path.append()`æ¥æ·»åŠ è·¯å¾„ã€‚å…·ä½“ä»£ç ä¸ºï¼š
 ```
 import sys
 sys.path.append("/path/your/code")
 ```
 
-# ÆäËû·½·¨
-ÆäÊµÓÐÎåÖÖ·½·¨£º
-- Ê¹ÓÃPYTHONPATH»·¾³±äÁ¿
-- ½«pyÎÄ¼þ·Åµ½site-packagesÄ¿Â¼ÏÂ
-- Ê¹ÓÃpthÎÄ¼þ£¬·Åµ½site-packagesÄ¿Â¼ÏÂ¡££¨Ò»ÐÐÒ»¸öÂ·¾¶£©
-- µ÷ÓÃsys.path.append("path")
-- Ö±½Ó°ÑÄ£¿éÎÄ¼þ·Åµ½$python_dir/libÄ¿Â¼ÏÂ
+# å…¶ä»–æ–¹æ³•
+å…¶å®žæœ‰äº”ç§æ–¹æ³•ï¼š
+- ä½¿ç”¨PYTHONPATHçŽ¯å¢ƒå˜é‡
+- å°†pyæ–‡ä»¶æ”¾åˆ°site-packagesç›®å½•ä¸‹
+- ä½¿ç”¨pthæ–‡ä»¶ï¼Œæ”¾åˆ°site-packagesç›®å½•ä¸‹ã€‚ï¼ˆä¸€è¡Œä¸€ä¸ªè·¯å¾„ï¼‰
+- è°ƒç”¨sys.path.append("path")
+- ç›´æŽ¥æŠŠæ¨¡å—æ–‡ä»¶æ”¾åˆ°$python_dir/libç›®å½•ä¸‹
 
-»¹ÓÐ¿ÉÄÜÊÇÈ¨ÏÞÎÊÌâ£¬ÓÐÐ©²Ù×÷ÊÇÔÚrootÏÂ£¬¶øÓÐÐ©²Ù×÷²»ÊÇµ¼ÖÂÕâ¸öÔ­Òò¡£ÁíÍâ»¹ÓÐ¿ÉÄÜÊÇ__init__.pyÎÄ¼þÖÐÓÐwindowsÏµÍ³µÄÌØÊâ×Ö·ûµ¼ÖÂ¡£
+è¿˜æœ‰å¯èƒ½æ˜¯æƒé™é—®é¢˜ï¼Œæœ‰äº›æ“ä½œæ˜¯åœ¨rootä¸‹ï¼Œè€Œæœ‰äº›æ“ä½œä¸æ˜¯å¯¼è‡´è¿™ä¸ªåŽŸå› ã€‚å¦å¤–è¿˜æœ‰å¯èƒ½æ˜¯__init__.pyæ–‡ä»¶ä¸­æœ‰windowsç³»ç»Ÿçš„ç‰¹æ®Šå­—ç¬¦å¯¼è‡´ã€‚
 
 ----------
-²Î¿¼: <http://blog.csdn.net/damotiansheng/article/details/43916881>
+å‚è€ƒ: <http://blog.csdn.net/damotiansheng/article/details/43916881>
