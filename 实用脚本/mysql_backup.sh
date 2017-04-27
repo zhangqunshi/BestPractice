@@ -17,3 +17,5 @@ DB_USR=root
 DB_PWD=123
 
 $MYSQL_CMD_PATH/mysqldump -u $DB_USR -p$DB_PWD $DB_NAME | gzip > ${BACKUP_DIR}/${DB_NAME}_${LOG_TIME}.sql.gz
+
+# restore data to DB # gzip < xxx.sql.gz | mysql -u root -p db_name
