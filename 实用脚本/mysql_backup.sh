@@ -14,6 +14,6 @@ LOG_TIME=`date +%Y%m%d%H`
 MYSQL_CMD_PATH=/usr/bin
 DB_NAME=mydb
 DB_USR=root
-DB_PWD
+DB_PWD=123
 
 $MYSQL_CMD_PATH/mysqldump -u $DB_USR -p$DB_PWD $DB_NAME | gzip > ${BACKUP_DIR}/${DB_NAME}_${LOG_TIME}.sql.gz
