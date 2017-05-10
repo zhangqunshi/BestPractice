@@ -14,4 +14,4 @@ lvmetad is not active yet; using direct activation during sysinit
 -----
 参考：
 1. <https://askubuntu.com/questions/767140/lvmetad-is-not-active-yet>
-
+2. <https://askubuntu.com/questions/865869/lvmetad-is-blocking-boot-process?noredirect=1&lq=1>
