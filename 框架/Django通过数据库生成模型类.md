@@ -1,12 +1,12 @@
-DjangoÍ¨¹ýÊý¾Ý¿âÉú³ÉÄ£ÐÍÀà
+Djangoé€šè¿‡æ•°æ®åº“ç”Ÿæˆæ¨¡åž‹ç±»
 =====
 
-ÔÚDjangoµÄÏîÄ¿Ä¿Â¼ÏÂÊäÈëÃüÁî£º
+åœ¨Djangoçš„é¡¹ç›®ç›®å½•ä¸‹è¾“å…¥å‘½ä»¤ï¼š
 ```
 python manage.py inspectdb
-»ò
+æˆ–
 python manage.py inspectdb > models.py
 ```
 
-Éú³ÉºÃµÄmodelÀàÖÐ£¬¶ÔÓÚË«Ö÷¼üµÄ±í£¬ÀàÖÐÊÇÃ»ÓÐÖ÷¼ü×Ö¶Î¶ÔÓ¦µÄ£¬ËùÒÔÐèÒªÐÞ¸Ä±í½á¹¹£¬Ôö¼ÓÒ»¸öidÁÐ£¨·ÇÖ÷¼ü£©£¬À´¼æÈÝDjango¡£
+ç”Ÿæˆå¥½çš„modelç±»ä¸­ï¼Œå¯¹äºŽåŒä¸»é”®çš„è¡¨ï¼Œç±»ä¸­æ˜¯æ²¡æœ‰ä¸»é”®å­—æ®µå¯¹åº”çš„ï¼Œæ‰€ä»¥éœ€è¦ä¿®æ”¹è¡¨ç»“æž„ï¼Œå¢žåŠ ä¸€ä¸ªidåˆ—ï¼ˆéžä¸»é”®ï¼‰ï¼Œæ¥å…¼å®¹Djangoã€‚
 
