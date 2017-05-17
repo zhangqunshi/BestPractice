@@ -37,6 +37,8 @@ server {
     }
 ```
 
+修改后重新加载配置（不用重启nginx）`nginx -s reload`（重启之前可以使用`nginx -t`命令检测一下配置是否正确），之后就可以访问<http://localhost/website/>试试了。 
+
 
 @完
 
