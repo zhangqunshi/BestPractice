@@ -5,7 +5,6 @@
 具体步骤如下：
 
     apt-get update
-    apt-get install python-pip
 
     apt-get install mysql-server
     apt-get install mysql-client
