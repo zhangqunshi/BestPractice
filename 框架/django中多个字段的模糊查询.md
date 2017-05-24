@@ -1,14 +1,14 @@
-djangoÖĞ¶à¸ö×Ö¶ÎµÄÄ£ºı²éÑ¯
+djangoä¸­å¤šä¸ªå­—æ®µçš„æ¨¡ç³ŠæŸ¥è¯¢
 ========
 
 
-Ê¹ÓÃ`Entity.objects.filter(name_contains='kris').filter(address='beijing')`
+ä½¿ç”¨`Entity.objects.filter(name_contains='kris').filter(address='beijing')`
 
-Õâ¸ö·½·¨ÊÇÖ¸Ãû×Ö°üº¬kris£¬²¢ÇÒµØÖ·°üº¬beijingµÄ¼ÇÂ¼¡£
+è¿™ä¸ªæ–¹æ³•æ˜¯æŒ‡åå­—åŒ…å«krisï¼Œå¹¶ä¸”åœ°å€åŒ…å«beijingçš„è®°å½•ã€‚
 
-Èç¹ûÊÇ²»Çø·Ö´óĞ¡Ğ´£¬ÄÇÃ´Ê¹ÓÃicontainsÌæ»»contains.
+å¦‚æœæ˜¯ä¸åŒºåˆ†å¤§å°å†™ï¼Œé‚£ä¹ˆä½¿ç”¨icontainsæ›¿æ¢contains.
 
-Èç¹ûÒª¸Ä³É»òµÄ»°£¬¿ÉÒÔÊ¹ÓÃÈçÏÂĞÎÊ½:
+å¦‚æœè¦æ”¹æˆæˆ–çš„è¯ï¼Œå¯ä»¥ä½¿ç”¨å¦‚ä¸‹å½¢å¼:
 
 ```
 Entity.objects.filter(Q(name_icontains='kris') | Q(address_icontains='beijing'))
