@@ -64,3 +64,8 @@ datafile中第一行为列名，剩下行为数据，而tablename不用存在，
 sqlite> .read backup_file.sql
 ```
 
+
+## 退出交互命令行
+```
+sqlite> .exit
+```
