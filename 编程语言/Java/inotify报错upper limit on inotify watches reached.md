@@ -1,11 +1,11 @@
-inotify±¨´íupper limit on inotify watches reached
+inotifyæŠ¥é”™upper limit on inotify watches reached
 ====
 
 
-ÔÚ¶ÔÒ»¸ö´ó´ÅÅÌ½øĞĞinotify¼àÌıÊ±£¬±¬³öÈçÏÂ´íÎó£º
+åœ¨å¯¹ä¸€ä¸ªå¤§ç£ç›˜è¿›è¡Œinotifyç›‘å¬æ—¶ï¼Œçˆ†å‡ºå¦‚ä¸‹é”™è¯¯ï¼š
 Failed to watch /mnt/;
 upper limit on inotify watches reached!
-Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watches¡¯.
+Please increase the amount of inotify watches allowed per user via `/proc/sys/fs/inotify/max_user_watchesâ€™.
 
-catÒ»ÏÂÕâ¸öÎÄ¼ş£¬Ä¬ÈÏÖµÊÇ8192£¬echo 8192000 > /proc/sys/fs/inotify/max_user_watches¼´¿É~
+catä¸€ä¸‹è¿™ä¸ªæ–‡ä»¶ï¼Œé»˜è®¤å€¼æ˜¯8192ï¼Œecho 8192000 > /proc/sys/fs/inotify/max_user_watcheså³å¯~
 
