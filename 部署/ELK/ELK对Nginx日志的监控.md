@@ -62,4 +62,24 @@ setup.kibana:
 ```
 -bash: ./filebeat: cannot execute binary file: Exec format error
 ```
+注意：这个问题发现是下载的东西不对。后来从官网上下载就好了[https://www.elastic.co/downloads/past-releases/filebeat-6-2-2].
+不要使用filebeat-6.2.2-darwin-x86_64.tar.gz这个版本。
+返回正确的信息为：`Enabled nginx`
+
+
+## 启动Filebeat
+启动命令：
+```
+./filebeat setup
+./filebeat -e
+```
+但是输入第一个命令就出现了如下错误：
+```
+Exiting: Couldn't connect to any of the configured Elasticsearch hosts. Errors: [Error connection to Elasticsearch http://192.168.0.110:9200: Get http://192.168.0.110:9200: dial tcp 192.168.0.110:9200: getsockopt: connection refused]
+```
+这是因为在elasticsearch中监听的IP是127.0.0.1，而不是0.0.0.0。修改一下elasticsearch.yml配置文件中对应的配置项就行了。Kibana的配置也是如此。
+
+
+
+
 
